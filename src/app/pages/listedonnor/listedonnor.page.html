@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-icon name="arrow-round-back" class="img" routerLink="/accuiel"></ion-icon>  
+    <ion-icon name="map" routerLink="/map" class="icon"></ion-icon>
+      <ion-searchbar placeholder=' ... بحث '></ion-searchbar>
+   
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item *ngFor="let item of items">
+    <ion-card style="border-radius: 12px; width: 100% ; background-color: rgb(216, 216, 216);">     
+     
+          <ion-avatar><img src="assets/img/man.png" style="margin-left: 220px; margin-top: 20px" > 
+             <img src="assets/img/Group 3.png" style="margin-top:-50px;margin-left: 20px;">   
+          </ion-avatar>
+       
+          <ion-label style="margin-left: 230px;margin-top: 30px">  <b><h4>{{item.username}}</h4></b></ion-label>
+       
+       <br>
+          <ion-button  color="danger"fill="outline"><ion-icon name="call" color="white"></ion-icon></ion-button>
+          <ion-button  color="danger"fill="outline" ><ion-icon name="chatbubbles"></ion-icon></ion-button>
+        
+  </ion-card>
+	 </ion-item>
+</ion-content>

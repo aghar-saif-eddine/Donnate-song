@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="end">
+      <ion-menu-button> </ion-menu-button>
+    </ion-buttons>
+    <ion-title id="title">الصفحة الرئيسية </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <!-- ici en va metre {{img.ava}} chque utilasateur est son profil  -->
+    <ion-avatar
+      ><img src="assets/img/man.png" routerLink="/profil"
+    /></ion-avatar>
+    <ion-item>
+      <ion-input type="textarea" placeholder="  ... نشر   "></ion-input>
+    </ion-item>
+    <br />
+    <ion-button shape="round" color="danger" fill="outline">
+      <ion-icon name="checkmark" ></ion-icon>
+    </ion-button>
+    <ion-button shape="round" color="danger" fill="outline">
+      <ion-icon name="image" ></ion-icon>
+    </ion-button>
+    <ion-button
+      shape="round"
+      color="danger"
+      fill="outline"
+      (click)="clickImage()"
+    >
+      <ion-icon name="camera"></ion-icon>
+    </ion-button>
+  </ion-card>
+  <!--  affichage du image qui nous avons prendre
+    <ion-card>
+    <img [src]="base64Image" />
+  </ion-card> -->
+
+  <ion-card>
+    <ion-title style="text-align: left ; font-size:16px ; margin-top: 25px"
+      >NDU محطّة سنويّة! وكلّ سنة أقوى من سنةال</ion-title
+    >
+    <ion-avatar
+      ><img
+        src="assets/img/tunis.png"
+        style="text-align: right;margin-top: -10px"
+      />
+    </ion-avatar>
+    <ion-card-content>
+      <img src="assets/img/5.jpg" /><br />
+      <!--  pour l'icon de vote en va faire une fonction l'image ou l;event il
+                5thit berch vote to5rej louwla  -->
+      <div style="display: inline-block">
+        <ion-icon
+          name="heart"
+          style="width: 30px;height: 30px; color: red;margin-left:10px"
+        ></ion-icon>
+        <ion-icon
+          name="chatbubbles"
+          style="width: 30px;height: 30px; color: red ;margin-left:100px"
+        ></ion-icon>
+        <ion-icon
+          name="star-outline"
+          style="width: 30px;height: 30px; color: red;margin-left: 100px"
+        ></ion-icon>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-infinite-scroll>
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

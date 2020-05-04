@@ -1,0 +1,45 @@
+.par1{
+    text-align: right;
+    font-size: 20px;
+    margin-right:5%;
+    font-family: fantasy
+    
+}
+.log{
+    width: 80%;
+    margin-left: 10%;
+    font-size: 20px;
+    
+  }
+  .par2{
+      text-align: right;
+      margin-right: 10%;
+      font-size: 20;
+  }
+  .zone{
+        ion-input{
+    --background: #EEEEEE;
+      border-radius: 20px;  
+      text-align: center;
+      color: rgb(211, 12, 12);
+      text-decoration: none;
+      width: 40%;
+      display: inline-block;
+      margin-left: 30%;
+
+  }
+}
+ion-input{
+    --background: #EEEEEE;
+      border-radius: 10px;  
+      text-align: right;
+      color: rgb(211, 12, 12);
+      text-decoration: none;
+  }
+  ion-item{
+      text-align: right;
+      font-size: 18px;
+      color: rgb(211, 12, 12);
+      margin-bottom: -3%;
+      text-decoration: none;
+  }

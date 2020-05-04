@@ -1,0 +1,48 @@
+ion-card{
+    margin-top: 40%;
+    border-radius: 20px;
+    height: 40%;
+    color: black;
+    ion-card-header{
+        text-align: left;
+        display: block;
+        color: white;
+    }
+    
+        ion-card-content{
+        .vote{
+            width: 50px;
+            height: 50px;
+            display: inline-flex;
+            margin-top: 20px
+
+        }
+        p{
+            text-align: right;
+            font-size: 20px;
+            color: white;
+        }
+    }
+
+   ion-button{
+       margin-top: 3%;
+       width: 48%;
+       color: white;
+   }
+
+}
+
+#btn2 {
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+      }
+
+.active, #btn2:hover {
+    --background: url("../../../assets/img/vote.png");
+color: yellow;
+
+}
+ion-content { --background: #fff  
+    no-repeat center center / cover; }
+    // url("../../../assets/img/")

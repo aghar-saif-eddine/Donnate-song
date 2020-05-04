@@ -1,0 +1,38 @@
+
+
+    .img1{
+        width: 230px;
+        height: 230px;
+        margin-left: 18%;
+        margin-top: 5%;
+    }
+    ion-input{
+        --background: #EEEEEE;
+          border-radius: 10px;  
+          text-align: right;
+          color: rgb(211, 12, 12);
+          text-decoration: none;
+          margin-top: 5%;
+      }
+      .titre{
+        margin-left: 170px;
+      }
+      ion-item{
+           text-align: right;
+          font-size: 18px;
+          color: rgb(211, 12, 12);
+         
+          text-decoration: none;
+      }
+      .log{
+        width: 80%;
+        margin-left: 10%;
+        font-size: 20px;
+      }
+      .scanne{
+       margin-left:25%;
+        width: 50%;
+        height: 35px; 
+         color:white;
+         --background: red
+     }

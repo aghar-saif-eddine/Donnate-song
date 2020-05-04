@@ -1,0 +1,36 @@
+.face{
+    text-align: center;
+       width: 70%;
+       margin-left: 15%;
+       --background:#3D50B4;
+    }
+       
+.mail{
+ text-align: center;
+  width: 70%;
+  --background:rgb(255, 255, 255);
+  margin-left: 15%;
+  color: rgb(0,0,0);
+
+}
+.titre{
+   margin-left: 75%;
+}
+ion-input{
+ --background: #EEEEEE;
+   border-radius: 8px;  
+   text-align: right;
+   color: rgb(211, 12, 12);
+   text-decoration: none;
+   margin-top: 3%;
+}
+ion-item{
+   text-align: right;
+   font-size: 18px;
+   color: rgb(211, 12, 12);
+   text-decoration: none;
+ }
+.img{
+   width: 23px;
+   height: 25px;
+}

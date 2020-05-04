@@ -1,0 +1,37 @@
+
+<ion-content>
+  <ion-card-content>
+  <div>
+      <img src="assets/img/kisspng-blood-donation-brand-clip-art-product-design-5ba1d8ef7790c2.1898578215373334874898 (1).png"  class="img1">
+  </div>
+  
+  <div padding>
+      <ion-item >  
+          <ion-label position="stacked" class="titre" >  <b>: إسم المركز </b></ion-label>
+          <ion-input type="text"></ion-input> 
+        </ion-item>
+        <ion-item >
+          <ion-label position="stacked" class="titre"  > <b>: ﺍﻟﻤﺪﻳﻨﺔ   </b> </ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item >
+            <ion-label position="stacked" class="titre"> <b> : رقم الهاتف  </b> </ion-label>
+            <ion-input type="number"></ion-input>
+          </ion-item><br>
+          <ion-item > <br>
+            <ion-input type="text" placeholder="code" [(ngModel)]="encodedText"></ion-input>
+          </ion-item><br>
+          <ion-button  shape="round"   class="scanne" (click)="encode()"> Generate-Code</ion-button>
+          <ion-button  shape="round"   class="scanne" (click)="scan()">  Scanner-Code</ion-button>
+          <br>
+          <ion-card *ngIf="enscannedData.text">
+              <ion-card-content>
+               <p>value:{{ enscannedData.text }}</p>
+              </ion-card-content>
+          </ion-card>
+        </div>
+       
+        <ion-button  shape="round"  color="danger" routerLink="/accuiel" class="log" >
+          <b>  ﺍﻟﺘﺴﺠﻴﻞ</b></ion-button>
+       </ion-card-content>
+</ion-content>

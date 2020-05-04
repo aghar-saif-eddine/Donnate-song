@@ -1,0 +1,31 @@
+
+<ion-content style="font-family: roboto; "  >
+  <div>
+    <img src="assets/img/image1.jpg.jpg" style="width: 100px;height: 100px;margin-left: 40%" >
+    <ion-card style="border-radius: 22px " padding>
+        <ion-item >  
+          <ion-label position="stacked" class="titre"  >  <b> ﺍﻹﺳﻢ</b></ion-label>
+          <ion-input type="text"[(ngModel)]="username"></ion-input> 
+        </ion-item>
+        <ion-item >
+          <ion-label position="stacked"  class="titre" > <b> ﻛﻠﻤﺔ ﺍﻟﺴﺮ </b> </ion-label>
+          <ion-input type="password"[(ngModel)]="password"></ion-input>
+        </ion-item> <br>
+      <p style="padding-left: 60%;" > <b routerLink="/forgetpass"> ici</b> نسيت كلمة المرور</p>
+      <div style="text-align:center;">
+        <div style="padding: 8% 0% 4% 0%">
+      <ion-button ion-button shape="round" color="danger" expand="full"(click)="login()" > <b> تسجيل الدخول </b></ion-button>
+      </div>
+    </div>
+      </ion-card>
+      <p  style="text-align:center;">  أو ، تواصل مع</p>
+         <ion-button ion-button class="mail" shape="round" (click)="googleLogin()">
+           <img src="assets/img/gmail.png" class="img" style="margin-left: -25%"> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; Gmail  </ion-button>
+           <br> 
+           <ion-button ion-button class="mail" shape="round" >
+            <img src="assets/img/facebook 2.png" class="img" style="margin-left: -15%"> &nbsp;&nbsp;  Facebook  </ion-button>
+            <br> 
+        <ion-button ion-button  shape="round"  class="mail" routerLink="/donnor" >
+          <img src="assets/img/creation.png" class="img" style="margin-left: -25%"> &nbsp;&nbsp; ﺇﻧﺸﺎﺀ ﺣﺴﺎﺏ  </ion-button>
+     </div>   
+  </ion-content>

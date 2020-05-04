@@ -1,0 +1,39 @@
+<ion-content>
+  <div>
+      <img src="assets/img/sang.jpg"  class="donn">
+          <ion-item >  
+          <ion-label position="stacked" class="titre" >  <b>: ﺍﻹﺳﻢ ﻭ ﺍﻟﻠﻘﺐ</b></ion-label>
+          <ion-input type="text" [(ngModel)]="username"></ion-input> 
+        </ion-item>
+        <ion-item >
+          <ion-label position="stacked" class="titre" > <b>: ﻛﻠﻤﺔ ﺍﻟﺴﺮ  </b> </ion-label>
+          <ion-input type="password"  [(ngModel)]="password"></ion-input>
+        </ion-item>
+        <ion-item >
+            <ion-label position="stacked" class="titre" > <b> :  ﺭﻗﻢ ﺍﻟﻬﺎﺗﻒ </b> </ion-label>
+            <ion-input type="number"  [(ngModel)]="tel"></ion-input>
+          </ion-item>
+         <p class="p1"> <b> : ﻓﺼﻴﻠﺔ ﺍﻟﺪﻡ </b> </p>      
+              <div id="select">
+              <button class="btn"  >A+</button>
+              <button class="btn">A-</button>
+              <button class="btn">B+</button>
+              <button class="btn">B-</button>
+              <button class="btn">O+</button>
+              <button class="btn">O-</button>
+              <button class="btn">AB+</button>
+              <button class="btn">AB-</button>
+            
+            </div>
+          <p  class="p1"> <b>:  ﺍﻟﺠﻨﺲ </b> </p>
+        </div >
+        <div id="select2">
+          <img src="assets/img/man.svg" class="btn2" style="margin-left: 27%">
+           <img src="/assets/img/Line.png" style="margin-left: 7%">
+          <img src="assets/img/woman (1).svg"  class="btn2" style="margin-left:8%">
+         </div>
+  <ion-button  shape="round"  color="danger"  class="log"  (click)="register()" >
+    <b>  ﺍﻟﺘﺴﺠﻴﻞ</b></ion-button>
+  
+  </ion-content>
+  

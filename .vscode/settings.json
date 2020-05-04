@@ -1,0 +1,9 @@
+{
+    "git.ignoreLimitWarning": true,
+    "eslint.alwaysShowStatus": true,
+    "eslint.autoFixOnSave": true,
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
+}

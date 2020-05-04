@@ -1,0 +1,32 @@
+
+<ion-menu  side="end" menuId="custom">
+    
+  <img src="assets/img/image1.jpg.jpg"
+   style="width: 150px;height: 150px;margin-left: 30%; top: 15%" >
+
+
+<ion-content>
+<ion-list>
+  <ion-menu-toggle menuId="end" >
+
+    <ion-item  routerLink="/accuiel" >  الصفحة الرئيسية </ion-item>
+    <ion-item routerLink="/listedonnor"  >قائمة المانحين</ion-item>
+    <ion-item  routerLink="/listechercheur"  > قائمة المحتاجين</ion-item>
+    <ion-item  routerLink="/profil">البيانات الشخصية</ion-item>
+    <ion-item  routerLink="/logout">الخروج </ion-item>
+
+  </ion-menu-toggle>
+</ion-list>
+</ion-content>
+</ion-menu>
+
+<ion-router-outlet main ></ion-router-outlet>
+
+<ion-app>
+<ion-router-outlet></ion-router-outlet>
+</ion-app>
+
+
+<ion-app>
+  <ion-router-outlet></ion-router-outlet>
+</ion-app>

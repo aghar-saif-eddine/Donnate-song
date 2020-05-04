@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="danger">
+		<img src="assets/img/web-house-.svg" 
+		style="color:white;height:30px;margin-top:10px;margin-left: 1 0px" routerLink="/accuiel">
+  	<ion-title style="margin-left: 100px;margin-top: -30px">البيانات الشخصية</ion-title>
+	</ion-toolbar>
+	
+</ion-header>
+
+<ion-content padding>
+		<ion-card>
+	<div class="image" >
+			<img src="assets/img/man (2).png">
+		</div>
+	<ion-card>
+   <ion-item *ngFor="let item of items">
+	 		<ion-input type="text"> {{item.username}}</ion-input><br><br><br> 
+			 <h4>الاسم</h4> <br> <br>			
+			</ion-item>
+				
+			<ion-item *ngFor="let item of items">				
+					   <ion-input type="number"> {{item.tel}}	</ion-input>
+					   <h4>ﺭﻗﻢ ﺍﻟﻬﺎﺗﻒ</h4>
+				   </ion-item>
+				   		
+			<ion-item *ngFor="let item of items">				
+					<img src="assets/img/Group 3.svg" width="40" height="40" style="margin-left:-100px" >
+					<h4> ﻓﺼﻴﻠﺔ ﺍﻟﺪﻡ</h4>
+				</ion-item>
+			</ion-card> 
+				
+	 <ion-button class="button" expand="full" shape="round"  color="danger" 
+	  fill="outline" routerLink="/logout"> الخروج</ion-button>
+	</ion-card>
+	
+</ion-content>
+
+
